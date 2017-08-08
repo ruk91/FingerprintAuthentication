@@ -11,7 +11,6 @@ package com.example.sajith.fingerprintauthentication;
         import android.Manifest;
         import android.os.CancellationSignal;
         import android.support.v4.app.ActivityCompat;
-        import android.view.View;
         import android.widget.Toast;
 
 

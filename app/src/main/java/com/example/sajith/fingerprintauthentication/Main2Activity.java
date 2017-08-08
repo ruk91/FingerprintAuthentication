@@ -9,7 +9,7 @@ import android.widget.Toast;
 public class Main2Activity extends AppCompatActivity {
 
     Handler handler;
-    Runnable r;
+    Runnable rnble;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         handler = new Handler();
-        r = new Runnable() {
+        rnble = new Runnable() {
 
             @Override
             public void run() {
@@ -52,10 +52,10 @@ public class Main2Activity extends AppCompatActivity {
         startHandler();
     }
     public void stopHandler() {
-        handler.removeCallbacks(r);
+        handler.removeCallbacks(rnble);
     }
     public void startHandler() {
-        handler.postDelayed(r, 5000); //for 5 secs
+        handler.postDelayed(rnble, 5000); //for 5 secs
     }
 
 

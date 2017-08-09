@@ -11,13 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
-
-        <activity
-            android:name=".MainActivity"
-
-            >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,14 +24,9 @@
             android:required="true" />
 
         <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-        <uses-permission android:name="android.permission.CAMERA"> </uses-permission>
+        <uses-permission android:name="android.permission.CAMERA" />
 
-
-        <activity
-            android:name=".Main2Activity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".QrScanner"></activity>
     </application>
 
 </manifest>

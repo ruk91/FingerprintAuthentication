@@ -53,7 +53,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
             Toast.makeText(context, "Successfully Logged In!", Toast.LENGTH_LONG).show();
 
         context.startActivity(new Intent(context,
-                Main2Activity.class));
+                QrScanner.class));
     }
 
 
